@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var a=["Ali", 49, "karachi"];
+        // var b = ["Kamran", 55, "Lahore"];
+        // a.push("0301233345");
+        // a.pop();
+        // a.sort();
+        // document.write(a);
+        // var persons = [3]
+        // persons[0] = ["Ali", 40, "Lahore"];
+        // persons[1] = ["Saqib", 50, "Karachi"];
+        // persons[2] = ["Raza", 60, "Islamabad"];
+        var persons = []
+        persons.push(["Ali", 40, "Lahore"]);
+        persons.push(["Saqib", 50, "Karachi"]);
+        persons.push(["Raza", 60, "Islamabad"]);
+        // document.write(persons[2][0] + persons[2][1]);
+        for(var rows in persons){
+            for(var columns in persons[rows]){
+                document.write(persons[rows][columns]+"");
+            }
+            document.write("<hr style='background-color: aqua; height: 2px;'>");
+        }
+              
+    </script>
+    
+</body>
+</html>
